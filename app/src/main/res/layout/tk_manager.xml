@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="管理题库"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="客观题:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="题干:" />
+
+            <EditText
+                android:id="@+id/ed_sin_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="答案1:" />
+
+            <EditText
+                android:id="@+id/ed_answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="答案2:" />
+
+            <EditText
+                android:id="@+id/ed_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="正确答案:" />
+
+            <EditText
+                android:id="@+id/ed_true_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="主观题题干:" />
+
+            <EditText
+                android:id="@+id/ed_sub_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_submitSin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="导入客观题" />
+
+            <Button
+                android:id="@+id/btn_submitSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="导入主观题" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="请输入要删除客观题目的id:" />
+
+            <EditText
+                android:id="@+id/ed_delete_sincontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_deleteSin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="删除客观题目" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="请输入要删除主观题目的id:" />
+
+            <EditText
+                android:id="@+id/ed_delete_subcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_deleteSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="删除主观题目" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
